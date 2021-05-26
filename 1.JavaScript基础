@@ -1,0 +1,48 @@
+1.JavaScript基础
+
+##JavaScript：
+ *概念：一门客户端脚本语言
+   *运行在客户浏览器中的。每一个浏览器都有javascript的解析引擎
+   *脚本语言：不需要编译，直接就可以被浏览器执行了
+
+
+   *功能：
+      *可以来增强用户和html页面的交互过程，可以来控制html元素，
+      让页面有一些动态的效果，增强用户体验
+      简单说，就是JS可以使页面动起来，css可以控制layout效果；
+
+    
+   *JavaScript发展史：
+       1.1992年，Nombase公司，开发出全球第一门客户脚本语言，专门用于表单校验；
+       命名为：C--，后来改名为：ScriptEase
+       2.1995年，Netsacpe（网景）公司，开发了一门客户脚本语言：LiveScript。
+       后来，请来sun公司的专家，修改LiveScript，命名为JavaScript
+       3.1996年，微软抄袭JavaScript开发出JScript语言搭载在IE浏览器上
+       4.1997年，ECMA(欧洲计算机制造商协会)，ECMAScript,就是所有客户脚本语言的标准。
+
+       *JavaScript=ECMAScript+JavaScript自己特有的东西（BOM+DOM）
+
+
+    *ECMAScript:客户端脚本语言的标准
+        1.基本语法：
+            1.与html结合方式
+                1.内部JS:
+                  *定义<Script>，标签体内容就是js代码
+                2.外部JS：
+                  *定义<Script>，通过src属性引入外部的js文件
+
+                  *注意：
+                     1.<Script>可以定义在html页面的任何地方。但是定义的位置会影响执行顺序。
+                     2.<Script>可以定义多个。
+            2.注释
+            3.数据类型
+            4.变量
+            5.运算符
+            6.流程控制语句
+        2.
+
+
+    *BOM
+
+
+    *DOM
