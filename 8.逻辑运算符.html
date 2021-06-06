@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="en">
+
+<head>
+
+    <title>逻辑运算符</title>
+
+    <script>
+     
+     /*
+      * 逻辑运算符
+      * &&:与（短路）
+      * ||：或（短路）
+      * ！：非
+          *其他类型转boolean：
+               1.number：0或者NaN为false，其他为true；
+               2.string：空字符串为false，其他位true；
+               3.null&underfine：都是false
+               4.对象：
+                  所有对象都为true；
+      */
+
+       var flag=true;
+
+       document.write(flag+"<br>");//true
+       document.write(!flag+"<br>");//flase
+
+       document.write("<hr>");
+       //number
+       var num=3;
+       var num1=0;
+       var num2=NaN;
+
+       document.write(!!num+"<br>"); //true
+       document.write(!!num1+"<br>"); //flase
+       document.write(!!num2+"<br>"); //flase
+
+       document.write("<hr>");
+
+       //string
+
+       var str="abc";
+       var str1="";
+      
+       document.write(!!str+"<br>"); //true
+       document.write(!!str1+"<br>"); //false
+
+       document.write("<hr>");
+
+      //null&underfine
+
+
+       var obj=null;
+       var obj2; //不写，即为underfine
+
+      
+       document.write(!!obj+"<br>"); //false
+       document.write(!!obj2+"<br>"); //false
+
+       document.write("<hr>");
+
+       //null&underfine
+
+       var date=new Date();
+       
+       document.write(!!date+"<br>");//true;
+
+       if(obj){//防止空指针异常,里面的判断条件是 if obj !=null;
+             alert(123);
+       }
+
+       obj="123";
+       if(obj !=null && obj.length>0){
+          //防止空指针异常
+          alert(123);
+       }
+
+       if(obj){
+          //防止空指针异常
+          alert(123);
+       }   //js中可以这样定义，简化书写。
+
+
+</script>
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>
