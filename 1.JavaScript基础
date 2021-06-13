@@ -98,6 +98,11 @@
 
           1.if....else
           2.switch
+            *在java中，switch语句可以接受的数据类型：byte，int，short，char，枚举（1.5），String（1.7）
+               *switch（变量）：
+                   case值：
+
+            *在js中，switch语句可以接受任意的原始数据类型
           3.while
           4.do....while 
           5.for
@@ -110,11 +115,147 @@
                （不建议这么写）
 
 
+        8. 练习：99乘法表
+          
+           <!DOCTYPE html>
 
-          2.基本对象
+           <html lang="en">
+
+           <meta charset="en">
+
+           <head>
+
+           <title>99乘法表</title>
+
+            <style>
+
+           td{
+            border: 1px solid
+            }
+           </style>
+
+           <script>
+            //1.完成基本的for循环嵌套，展示乘法表
+
+            document.write("<table align='center'>");
+
+            for(var i=1; i<=9;i++){
+
+            document.write("<tr>");
+             
+            for(var j=1;j<=i;j++){
+
+                //输出 1*1=1
+                document.write("<td>");
+
+                document.write(i+"*"+j+"="+(i*j)+"&nbsp;&nbsp;&nbsp;")
+
+                document.write("</td>");
+            }
+
+            
 
 
-           *BOM
+            //document.write("<br>");
+
+            document.write("</tr>");
+            }
+
+           //2.完成表格嵌套
+
+          document.write ("</table>");
 
 
-          *DOM
+          <!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="en">
+
+<head>
+
+    <title>99乘法表</title>
+
+    <style>
+
+        td{
+            border: 1px solid
+        }
+    </style>
+
+    <script>
+        //1.完成基本的for循环嵌套，展示乘法表
+
+        document.write("<table align='center'>");
+
+        for(var i=1; i<=9;i++){
+            document.write("<tr>");
+             
+            for(var j=1;j<=i;j++){
+
+                //输出 1*1=1
+                document.write("<td>");
+
+                document.write(i+"*"+j+"="+(i*j)+"&nbsp;&nbsp;&nbsp;")
+
+                document.write("</td>");
+            }
+
+            
+
+
+            //document.write("<br>");
+
+            document.write("</tr>");
+        }
+
+           //2.完成表格嵌套
+
+        document.write ("</table>");
+
+     
+
+
+        </script>
+
+        </head>
+
+
+        <body>
+
+        </body>
+
+        </html>
+
+
+        2.基本对象
+
+
+        *BOM
+        Function对象：函数
+        Array
+        boolean
+        Date
+        Math
+        Number
+        String
+        RegExp
+        Global
+
+
+        *DOM
+
+     
+
+
+          
+
+
+
+
+
+
+           
+
+
+
