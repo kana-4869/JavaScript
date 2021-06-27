@@ -1,1 +1,1 @@
-# kana-4869-JavaScript
+JavaScript
