@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>JS对象-Global</title>
+
+<script>
+ 
+ /*
+   1.特点：全局对象，这个global中封装的方法不需要对象就可以直接调用，
+   2.方法：
+            encodeURI():url编码
+            decodeURI():url解码
+            encodeURIComponent():url编码， 编码解码的字符更多
+            decodeURIComponent():url解码
+            parseInt():将字符串转为数字。
+              *逐一判断每一个字符是否是数字，直到不是数字为止，
+              将前边数字部分转为number
+            isNaN():检查某个值是否是数字。
+              *NaN连自己都无法判断，NaN参与的==比较，全部结果都是false
+            eval():计算 JavaScript 字符串，并把它作为脚本代码来执行。
+
+   3.滨崎步=%E6%BB%A8%E5%B4%8E%E6%AD%A5
+    有多少字节，数百分号即可。
+*/
+
+var str = "滨崎步";
+var encode = encodeURI(str);
+document.write(encode+"<br>"); //%E6%BB%A8%E5%B4%8E%E6%AD%A5
+
+var s = decodeURI(encode);
+document.write(s+"<br>"); //滨崎步
+
+var str1 = "https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E6%BB%A8%E5%B4%8E%E6%AD%A5";
+var encode1 = encodeURIComponent(str1);
+document.write(encode1+"<br>");
+
+var s1 = decodeURIComponent(encode1);
+document.write(s1+"<br>");
+
+var str = "a123bc";
+var number = parseInt(str);
+//alert(number+1); result is NaN
+
+var str3 = "123bc";
+var number1 = parseInt(str3);
+//alert(number1+1); result is 124
+
+var a = NaN;
+document.write(a==NaN+'<br>');// flase
+document.write(isNaN(a)+'<br>');//true
+
+var jscode = "alert(123)";
+alert(jscode); //结果是alert(123)
+eval(jscode);//解析了js代码并弹出123
+
+
+
+
+
+</script>
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+
+
+  
+
+     
+
+
+          
+
+
+
+
+
+
+

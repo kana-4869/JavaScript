@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>JS对象-RegExp</title>
+
+<script>
+ 
+ /*
+ 正则对象：
+      1.创建
+        1.var reg = new RegExp("正则表达式");
+        2.var reg =/正则表达式/;
+
+      2.方法
+        1.test(参数)：验证指定的字符是否符合正则定义的规范
+
+
+*/
+
+//1.
+
+var reg = new RegExp("\\w{6,12}"); 
+//:\带有转义的作用，如果想要w代表的是单词字符，那如果加双斜线，如\\w{6,12}
+
+//2.
+
+var reg2 =/^\w{6,12}$/; //^:开始，$:结束
+
+/*alert(reg);
+alert(reg2);
+*/
+
+var username = "zhangsan";
+var flag = reg2.test(username);
+
+alert(flag);
+
+
+
+</script>
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+
+
+  
+
+     
+
+
+          
+
+
+
+
+
+
+
