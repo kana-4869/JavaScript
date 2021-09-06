@@ -1,0 +1,22 @@
+JavaScript高级笔记
+#今日内容：
+1.JavaScript
+    1.ECMAScript
+    2.BOM:
+    3.DOM:
+        1.事件
+
+##DOM简单学习：为了满足案例要求
+  *功能：控制html文档的内容
+  *代码：获取页面标签（元素）对象Elment
+     *document.getElementById（“id值”）：通过元素的id获取元素对象
+  *操作Elment对象：
+     1.修改属性值：
+        1.明确获取的对象是哪一个？
+        2.查看API文档，找其中哪些属性可以设置
+     2.修改标签体内容：
+        *属性：innerHTML
+
+##事件简单学习
+  
+
