@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>电灯开关</title>
+
+
+</head>
+
+<body>
+<img id="light" src="C:/Users/kana/Desktop/front end learing/JavaScript高级/img/close.jpg">
+
+
+</body>
+
+<script>
+
+/*分析：
+      1.获取图片对象
+      2.绑定单击事件
+      3.每次点击切换图片
+          *规则：
+             *如果眼睛是open的，切图为close
+             *如果眼睛是close的，切图为open
+          *使用标记flag来完成
+*/
+
+//1.获取图片对象
+var light =document.getElementById("light");
+var flag=false;
+//2.绑定单击事件
+light.onclick=function(){
+ if(flag){//判断如果眼睛是open的，则close
+ light.src="C:/Users/kana/Desktop/front end learing/JavaScript高级/img/close.jpg";
+ flag=false;
+ }else{
+   //如果眼睛是close的，则open
+   light.src="C:/Users/kana/Desktop/front end learing/JavaScript高级/img/open.jpg";
+   flag=true;
+ }
+}
+
+   
+</script>
+
+
+</html>
