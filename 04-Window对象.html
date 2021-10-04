@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Window对象</title>
+
+
+</head>
+
+
+<script>
+/*
+Window:窗口对象
+    1.创建
+    2.方法
+        1.与弹出框有关的方法：
+          alert（）显示带有一段消息和一个确认按钮的警告框
+          confirm（）显示带有一段消息以及确认和取消按钮的对话框
+            *如果用户点击确定按钮，方法返回true
+            *如果用户点击取消按钮，方法返回false
+          prompt（）显示可提示用户输入的对话框。
+
+    3.属性
+    4.特点
+       *Window对象不需要创建可以直接使用window。例：window.方法名（）；
+       *window引用可以省略。 例：方法名（）；
+*/
+
+window.alert("hello,world!!");
+alert("hello, window!!");
+
+var flag = confirm("确实要取消吗？");
+if(flag){
+  //退出操作
+  alert("欢迎再次访问");
+}else{
+  //提示：别退出。。。
+  alert("别退出。。。");
+}
+
+var result = prompt("请输入用户信息");
+alert(result);
+
+
+
+
+
+   
+</script>
+
+
+</html>
